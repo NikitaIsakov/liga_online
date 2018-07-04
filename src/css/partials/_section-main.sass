@@ -1,0 +1,360 @@
+.main
+	margin-top: 160px
+	margin-bottom: 100px
+.wrap-main-section
+	display: flex
+
+.card-description,
+.card-registration
+	background-color: white
+	position: relative
+
+.card-description,
+.card-registration
+	padding: 23px 20px 0 20px
+	width: 410px
+	max-height: 652px
+
+.card-advantages
+	max-width: 535px
+	margin: 0 10px
+
+.title
+	color: #000000
+	font-family: $ff
+	text-transform: uppercase
+	font-size: 32px
+	font-weight: 700
+	line-height: 38px
+	position: relative
+	&:before
+		content: ""
+		width: 3px
+		height: 49px
+		top: -5px
+		background-color: black
+		position: absolute;
+		left: -20px
+.card-text
+	font-size: 22px
+	font-weight: 300
+	line-height: 30px
+.theme-pink:before
+	background-color: #ff00b8
+.theme-green:before
+	background-color: #6abd00
+.theme-light-blue:before
+	background-color: #00c2ff
+.theme-pink-custom
+	margin-top: -7px
+.theme-pink-custom:before
+	background-color: #ff00b8 
+	height: 85px
+.card-description
+	max-height: 650px
+	.card-text
+		margin-top: 20px
+		&:nth-child(3)
+			margin-top: 33px
+.wrap-card-desription-img
+	margin-top: 50px
+	margin-left: 13px
+	// margin-bottom: -15px
+	img
+		position: relative
+		top: 16px
+.card-advantages-item
+	padding: 20px 0 20px 20px
+	height: 175px
+	position: relative
+	background-color: white
+	display: flex
+	justify-content: space-between
+	.card-text
+		margin-top: 20px
+.card-advantages-item:nth-child(2)
+	margin-top: 10px
+	margin-bottom: 10px
+
+.form-wrap
+	width: 335px
+	margin-left: auto
+	margin-right: auto
+	margin-top: 15px
+	position: relative
+	// margin-bottom: 20px
+
+.input-custom
+	width: 100%
+	padding: 15px 0 15px 10px
+	border: none
+	border-bottom: 1px solid #f2f2f2
+	color: #b3b3b3
+	font-family: $ff
+	font-size: 22px
+	font-weight: 300
+	line-height: 26px
+
+.input-custom:focus
+	border-bottom: 1px solid #f2f2f2
+	outline: none
+	color: #000
+
+.input-custom::placeholder
+	color: #b3b3b3
+	font-family: $ff
+	font-size: 22px
+	font-weight: 300
+	line-height: 26px
+
+option
+	border: 1px solid gray
+	&:hover
+		background-color: red
+
+.select 
+  position: relative;
+  display: inline-block;
+
+
+
+select 
+  padding-right: 25px
+  position: relative
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+.select-icon:after
+	content: "^"
+	width: 30px
+	height: 30px
+	transform: rotate(180deg) scaleX(1.5) 
+	// background-color: red
+	position: absolute
+	color: #b3b3b3
+	font-weight: 300
+	font-size: 20px
+	right: 20px
+	top: 5px 
+
+.wrap-checkbox
+	margin-top: 25px
+	width: 110%
+.checkbox 
+	display: none; 
+
+.checkbox-custom 
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #b3b3b3
+	border: 1px solid #b3b3b3
+	border-radius: 4px;
+	// left: 30px;
+	// top: 15px; 
+
+
+.label-checkbox 
+	text-indent: 30px
+	position: relative;
+	justify-content: center; 
+
+.checkbox-custom,
+.label 
+	display: block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+
+.label 
+
+	margin-left: auto;
+	margin-right: auto;
+	// padding-left: 25px; 
+	// width: 100%
+	font-size: 20px
+	font-weight: 300
+	line-height: 25px
+	font-family: $ff
+	color: #b3b3b3
+
+.document
+	text-decoration: none
+	color: #6abd00
+
+.checkbox:checked + .checkbox-custom::before 
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	background: #6abd00; 
+	border: 1px solid #6abd00
+
+.checkbox:checked + .checkbox-custom::after 
+	content: '✔';
+	font-size: 20px;
+	line-height: 10px;
+	position: absolute;
+	top: 7px;
+	left: -28px;
+	color: #fff;
+
+.btn-submit
+	display: inline-block
+	border-radius: 4px
+	font-family: $ff
+	background-color: #4a76a8
+	margin-top: 20px
+	margin-left: 5px
+	font-size: 18px
+	font-weight: 300
+	line-height: 25px
+	padding: 8px 15px
+	padding-bottom: 10px
+	text-decoration: none
+	color: white
+	position: relative
+.icon-submit
+	font-size: 22px
+	position: relative
+	top: 3px
+
+.wrap-btn-autorisation
+	display: flex
+	justify-content: space-between
+	// background-color: red
+	margin-top: 30px
+
+.btn-registration
+	text-transform: uppercase
+	font-family: $ff
+	font-size: 20px
+	font-weight: 700
+	line-height: 23px
+	margin-left: -20px
+	width: 210px
+	padding-top: 15px
+	// height: 32px
+	color: white;
+	padding-left: 10px
+	padding-top: 17px
+	padding-bottom: 17px
+	background-color: #6abd00
+	text-align: center
+	position: relative
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+.btn-registration:after
+	content: ""
+	position: absolute
+	right: -57px
+	top: 0px
+	border: 28.5px solid transparent;
+	border-left: 28.5px solid  #6abd00;
+	border-bottom: 28.5px solid  #6abd00;
+	display: block;
+	width: 0;
+	height: 0;
+	
+.btn-autorisation
+	margin-top: 13px
+	text-decoration: none
+	color: #6abd00
+	font-family: $ff
+	font-size: 20px
+	font-weight: 700
+	line-height: 23px
+	text-transform: uppercase
+	&:hover
+		text-decoration: none
+
+.dropcontainer 
+	position: relative;
+	font-size: 22px
+	font-weight: 300
+	line-height: 26px
+	font-family: $ff
+
+.trigger, .activetrigger
+	font-size: 22px
+	font-weight: 300
+	line-height: 26px
+	font-family: $ff
+	text-decoration: none
+	color: #b3b3b3
+	padding-left: 10px
+	padding-bottom: 10px
+	margin-top: 15px
+	margin-bottom: 5px
+	width: 100%
+	border-bottom: 1px solid #f2f2f2
+	display: inline-block
+
+.dropdownvisible
+	list-style: none
+	margin: 0
+	padding: 0
+	li
+		padding-left: 10px
+		margin-top: 20px
+		margin-bottom: 20px
+		&:nth-child(2)
+			margin-top: 0
+			padding-top: 20px
+		a
+			text-decoration: none
+			color: #b3b3b3
+			padding-bottom: 10px
+			font-size: 22px
+			width: 100%
+			display: inline-block
+.dropcontainer
+	background-color: #f2f2f2
+	position: absolute
+	z-index: 20
+	width: 100%
+
+.dropcontainer ul 
+	font-size: 22px
+	font-weight: 300
+	line-height: 26px
+	font-family: $ff
+	list-style: none
+	margin: 0
+	padding: 0
+	// margin-top: 10px
+	margin-bottom: 10px
+
+.dropcontainer ul li 
+	padding: 5px;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
+	padding-left: 10px
+	border-bottom: 1px solid white
+	width: 100%	
+
+.dropcontainer ul li:first-child 
+	display: none;	
+
+.dropcontainer ul li:last-child 
+	border-bottom: none;
+	padding-bottom: 0
+	margin-bottom: 0	
+
+.dropdownhidden 
+	display: none;	
+
+.dropdownvisible 
+	height: auto;
+	margin-top: 0	
+	

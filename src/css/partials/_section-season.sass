@@ -1,0 +1,171 @@
+.title-section
+	color: white
+	font-family: $ff
+	font-size: 30px
+	font-weight: 700
+	line-height: 35px
+	text-align: left
+	margin-bottom: 30px
+
+.wrap-section-cards
+	display: flex
+	justify-content: space-between
+	// margin-bottom: 80px
+
+.wrap-section-cards__item
+	width: 426px
+
+
+.wrap-card-header
+	background-color: rgba(0,0,0, 0.5)
+	background-image: url(../img/card_header_1.jpg)
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	height: 190px
+	img
+		border-radius: 50%
+		width: 100px
+		height: 101px
+		margin-right: 20px
+		margin-top: 20px
+.card-header
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: space-between
+	background-color: rgba(0, 0, 0, 0.4)
+.theme_drift
+	background-image: url(../img/card_header_2.jpg)
+.theme-crue
+	background-image: url(../img/card_header_3.jpg)
+	
+.title-card
+	font-size: 32px
+	font-weight: 700
+	line-height: 38px
+	text-transform: uppercase
+	font-family: $ff
+	color: white
+	margin-top: 30px
+	margin-left: 20px
+	position: relative
+	&:before
+		content: ""
+		width: 3px
+		height: 49px
+		background-color: #6abd00
+		position: absolute
+		left: -20px
+		top: -5px
+.wrap-card-content
+	
+	margin-top: 0
+	padding-top: 0
+	position: relative
+
+.card-content
+	background-color: white
+	margin: 0
+	padding: 0
+	display: flex
+	list-style: none
+	flex-wrap: wrap
+	flex-direction: column
+	height: 179px
+	padding-top: 21px
+
+.card-content-item
+	font-size: 18px
+	font-weight: 300
+	line-height: 25px
+	color: #000
+	margin-bottom: 14px
+	font-family: $ff
+	&:nth-child(3)
+		margin-bottom: 60px
+	span
+		position: relative
+		top: 2px
+		color: rgba(0,0,0, 0.7)
+		margin-right: 10px
+		margin-left: 20px
+	&:first-child
+		color: #6abd00
+		span
+			color: inherit
+.wrap-season-btn
+	background-image: url(../img/card_btn_1.jpg)
+	background-repeat: no-repeat
+	margin-top: 10px
+	width: 100%
+	
+
+.card-content-btn
+	position: absolute
+	bottom: 0
+	background-color:  #6abd00
+	font-size: 20px
+	font-weight: 700
+	line-height: 23px
+	font-family: $ff
+	text-decoration: none
+	color: white
+	text-transform: uppercase
+	padding: 12.5px
+	padding-left: 20px
+	&:after
+		content: ""
+		position: absolute
+		right: -48px
+		top: 0px
+		border: 24px solid transparent;
+		border-left: 24px solid  #6abd00;
+		border-bottom: 24px solid  #6abd00;
+	&:hover
+		text-decoration: none
+.btn-more-cards
+	display: inline-block
+	width: 100%
+	text-decoration: none
+	color: #ffffff
+	font-family: $ff
+	font-size: 20px
+	font-weight: 700
+	line-height: 23px
+	text-transform: uppercase
+	position: relative
+	z-index: 4
+	&:before
+		content: ""
+		width: 3px
+		height: 34px
+		background-color: #6abd00
+		position: absolute
+		left: -20px
+		top: -5px
+	&:hover
+		text-decoration: none
+.theme_2
+	background-image: url(../img/card_btn_3.jpg)
+.btn-theme_2:before
+		background-color: #00c2ff
+.theme_3
+	background-image: url(../img/card_btn_2.jpg)
+.btn-theme_3:before
+		background-color: #ff00b8
+.more-cards
+	display: block
+	// height: 100%
+	// width: 100%
+	background-color: rgba(0,0,0,0.4)
+	padding-top: 25px
+	padding-bottom: 25px
+	padding-left: 20px
+	padding-right: 20px
+
+.wrap-season-btns
+	display: flex
+	justify-content: space-between
+.wrap-season-btn
+	max-width: 426px
+	// max-width: 680px
