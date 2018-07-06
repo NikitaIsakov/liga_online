@@ -51,7 +51,9 @@ h1 {
 .container-content {
   max-width: 1300px;
   margin: 0 auto; }
-
+.ctr-news{
+  margin-bottom: 40px;
+}
 .btn-back {
   display: none; }
 
