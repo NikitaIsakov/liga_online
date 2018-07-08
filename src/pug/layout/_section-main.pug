@@ -1,0 +1,75 @@
+section.main
+	.container-content
+		.wrap-main-section
+			.card-description
+				h2.title.theme-pink Liga-online
+				p.card-text Мы организуем киберспортивные онлайн-турниры среди игроков FIFA18.
+				p.card-text Присоединяйся к нам, побеждай соперников, повышай свой рейтинг и поборись за звание чемпиона среди профессионалов.
+				.wrap-card-desription-img
+					img(src="img/DQbdt2HUIAI5Jes.jpg" alt="cup")
+			.card-advantages
+				.card-advantages-item
+					.card-advantage-content
+						h2.title.theme-light-blue Активное комьюнити
+						p.card-text.comuniti-text Общение с игроками в социальных сетях и мессенджерах
+					.card-advantage-img.img-comuniti
+						img(src="img/ico.png" alt="#")
+				.card-advantages-item
+					.card-advantage-content
+						h2.title.theme-green Федеральный охват
+						p.card-text Тысячи игроков по всей России и Казахстану уже с нами.
+					.card-advantage-img.img-federal
+						img(src="img/ico1.png" alt="#")
+				.card-advantages-item
+					.card-advantage-content
+						h2.title.theme-pink-custom Регулярные чемпионаты
+						p.card-text Новые турниры каждую неделю.
+					.card-advantage-img.img-chempions
+						img(src="img/ico2.png" alt="#")
+			.card-registration
+				h2.title.theme-green Регистрация
+				form
+					.form-wrap
+						input(type="text" placeholder="Никнейм").input-custom
+					.form-wrap
+						label.select-icon
+							select.turnintodropdown.input-custom.select
+								option(selected hidden) Город
+								option Красноярск
+								option Канск
+								option Шотландия
+								option Уэльс
+								option Канск
+								option Шотландия
+					.form-wrap.form-email
+						input(type="text" placeholder="E-mail").input-custom
+					.form-wrap
+						input(type="password" placeholder="Пароль").input-custom
+					.form-wrap
+						input(type="password" placeholder="Повторите пароль").input-custom
+					.wrap-checkbox
+						label.label-checkbox
+							input.checkbox(type="checkbox" name="checkbox-test")
+							span.checkbox-custom
+							span.label Регистрируясь, Вы соглашаетесь с 
+								a(href="#").document пользовательским соглашением 
+								| и принимаете нашу 
+								a(href="#").document  политику конфиденциальности.
+					a(href="#").btn-submit
+						span.icon-speech-bubbles-comment-option.icon-submit 
+						| Получать уведомления
+				.wrap-btn-autorisation
+					a.btn-registration(href="#") Зарегистрироваться
+					a.btn-autorisation(href="#") Вход
+			.wrap-card-autorisations
+				h3.title.theme-light-blue вход на сайт
+				form.form-registration
+					.form-wrap
+						input(type="text" placeholder="E-mail").input-custom
+					.form-wrap
+						input(type="password" placeholder="Пароль").input-custom
+					a(href="#").recover Забыли пароль?
+					.wrap-btn-autorisations
+						a(href="#").btn-login Войти
+						a(href="#").btn-registred Регистрация
+

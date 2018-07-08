@@ -19,8 +19,11 @@
 	background-repeat: no-repeat
 .theme-boss
 	background-size: cover !important
+.wrap-section-cards__item
+	img
+		width: 100px
 @media(max-width: 1919px)
-	.container-header-xl
+	.container-header
 		max-width: 1406px
 		padding-left: 55px
 		padding-right: 55px
@@ -31,7 +34,6 @@
 	.btn-autorisation
 		right: -510px
 		position: absolute
-
 	.wrap-top-autorisation
 		display: none
 	.wrap-top-profile
@@ -50,7 +52,7 @@
 				font-weight: 300;
 				line-height: 26px;
 				font-family: $ff
-	.top-profile-logo
+	.top-profile__logo
 		width: 36px
 		height: 36px
 		margin-bottom: -10px
@@ -96,14 +98,14 @@
 		font-family: $ff
 		background-color: #ff00b8;
 		color: white
-		width: 18px
+		width: 19px
 		height: 18px
 		border-radius: 50%
 		position: relative
 		top: -2px
 		text-align: center
 		padding-top: 2px
-		padding-right: 2px
+		padding-right: 1px
 		display: inline-block
 	.star-rating__item
 		// margin-left: 5px
@@ -206,7 +208,7 @@
 		overflow: hidden
 	.wrap-card-desription-img
 		position: absolute
-		bottom: -30px
+		bottom: -100px
 // @media(max-width: 1025px)
 
 	
@@ -217,7 +219,7 @@
 		display: none
 	.wrap-notifications
 		display: none
-	.container-header-xl
+	.container-header
 		max-width: 718px
 		padding-left: 10px
 		padding-right: 10px
@@ -563,7 +565,7 @@
 	.item-text
 		float: none !important
 		margin-left: 0 !important
-	.container-header-xl
+	.container-header
 		max-width: 436px
 	.wrap-news_card
 		max-height: 388px
@@ -592,17 +594,17 @@
 		width: 90px
 		justify-content: space-between
 		text-align: center
-	.footer-social-item:first-child
+	.footer-social__item:first-child
 		margin-left: 20px
 		margin-bottom: 10px
 	.footer-vk
 		font-size: 40px
 	.footer-mail
 		font-size: 40px
-	.wrap-copyright
+	.copyright
 		flex-direction: column
 		text-align: center
-	.author
+	.copyright_author
 		margin-top: 40px
 		display: flex
 		flex-wrap: wrap

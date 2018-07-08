@@ -10,10 +10,12 @@ var gulp = require('gulp'),
     browserSync = require("browser-sync"),
     uncss = require("gulp-uncss"),
     postcss = require("gulp-postcss"),
+    pug = require("gulp-pug"),
     reload = browserSync.reload;
 
 var path = {
   build: { 
+    pug: 'build/',
     html: 'build/',
     js: 'build/js/',
     css: 'build/css/',
@@ -21,6 +23,7 @@ var path = {
     fonts: 'build/fonts/'
   },
   src: { 
+    pug: 'src/pug/pages/index.pug',
     html: 'src/*.html', 
     js: 'src/js/main.js', 
     style: 'src/css/main.sass',
@@ -28,6 +31,7 @@ var path = {
     fonts: 'src/fonts/**/*.*'
   },
   watch: { 
+    pug: 'src/pug/pages/index.pug',
     html: 'src/**/*.html',
     js: 'src/js/**/*.js',
     style: 'src/css/**/*.*',
@@ -46,6 +50,15 @@ var config = {
   host: 'localhost',
   port: 9000
 };
+
+gulp.task('pug:build', function(){
+   gulp.src(path.src.pug)
+    .pipe(pug( {
+      pretty:true 
+      }))
+    .pipe(gulp.dest(path.build.pug))
+    .pipe(reload({ stream: true })); 
+  })
 
 gulp.task('html:build', function() {
   gulp.src(path.src.html) 
@@ -88,6 +101,7 @@ gulp.task('fonts:build', function() {
 });
 
 gulp.task('build', [
+  'pug:build',
   'html:build',
   'js:build',
   'style:build',
@@ -96,6 +110,9 @@ gulp.task('build', [
 ]);
 
 gulp.task('watch', function() {
+   watch([path.watch.pug], function(event, cb) {
+    gulp.start('pug:build');
+  });
   watch([path.watch.html], function(event, cb) {
     gulp.start('html:build');
   });
