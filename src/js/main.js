@@ -1,4 +1,4 @@
-   $(document).ready(function(){
+  $(document).ready(function(){
 
 			var btn = document.getElementsByClassName('btn-burger-mobile');
 				var notification = document.getElementsByClassName('burger-notification');
@@ -8,13 +8,13 @@
 				btn[0].onclick = function (e) {
 					btn_burger[0].classList.toggle("burger-active");
 					btn[0].classList.toggle("burger-notification");
-					mobile_nav[0].classList.toggle("wrap-nav-mobile_active");
+					mobile_nav[0].classList.toggle("wrap-nav-mobile-active");
 				};
 
 
 
 
-   var owl = $('.owl-carousel');
+   var owl = $('.owl-carousel-news');
       owl.owlCarousel({
         loop: true,
         items: 1,
@@ -22,12 +22,28 @@
         // nav: true,
         
         onInitialized: function(e) {
-          $('.counter').text('< 1 / ' + this.items().length + ' > ')
+          $('.counter1').text('< 1 / ' + this.items().length + ' > ')
         }
         
       });
       owl.on('changed.owl.carousel', function(e) {
-        $('.counter').text(' < ' + ++e.page.index + ' / ' + e.item.count + ' >')
+        $('.counter1').text(' < ' + ++e.page.index + ' / ' + e.item.count + ' >')
+      }); 
+
+    var owl1 = $('.owl-carousel-season');
+      owl1.owlCarousel({
+        loop: true,
+        items: 1,
+        margin: 10,
+        // nav: true,
+        
+        onInitialized: function(e) {
+          $('.counter2').text('< 1 / ' + this.items().length + ' > ')
+        }
+        
+      });
+      owl1.on('changed.owl.carousel', function(e) {
+        $('.counter2').text(' < ' + ++e.page.index + ' / ' + e.item.count + ' >')
       }); 
 
      

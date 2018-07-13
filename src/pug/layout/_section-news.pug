@@ -1,46 +1,28 @@
+mixin news-card-item (title, content)
+	.news-card
+		.header-news-card
+			.title-date= title
+			.news-card-content= content
+		a(href="#").btn-news Читать подробнее
 section
 	.wrap-section-news
 		.container-content
 			h2.title-section Новости
-			.wrap_news_cards
-				.wrap-news_card.theme-boss
-					.news_card
-						.header_news_card
-							.title_date 08 Февраля 2018
-							.news-card-content Глава немецкого футбольного союза раскритиковал киберфутбол
-						a(href="#").btn-news Читать подробнее
-				.wrap-news_card.theme-box
-					.news_card
-						.header_news_card
-							.title_date 07 Февраля 2018
-							.news-card-content Германия признает киберспорт официальным видом спорта
-						a(href="#").btn-news Читать подробнее
-				.wrap-news_card.theme-teenager
-					.news_card
-						.header_news_card
-							.title_date 06 Февраля 2018
-							.news-card-content 16-летний киберспортсмен выиграл первый крупный чемпионат по FIFA 18
-						a(href="#").btn-news Читать подробнее
-			.owl-carousel
+			.wrap-news-cards
+				.wrap-news-card.theme-boss
+					+news-card-item ("08 Февраля 2018", "Глава немецкого футбольного союза раскритиковал киберфутбол")
+				.wrap-news-card.theme-box
+					+news-card-item ("07 Февраля 2018", "Германия признает киберспорт официальным видом спорта")
+				.wrap-news-card.theme-teenager
+					+news-card-item ("06 Февраля 2018", "16-летний киберспортсмен выиграл первый крупный чемпионат по FIFA 18")
+			.owl-carousel.owl-carousel-news
 				.item
-					.wrap-news_card.theme-boss
-						.news_card
-							.header_news_card
-								.title_date 08 Февраля 2018
-								.news-card-content Глава немецкого футбольного союза раскритиковал киберфутбол
-							a(href="#").btn-news Читать подробнее
+					.wrap-news-card.theme-boss
+						+news-card-item ("08 Февраля 2018", "Глава немецкого футбольного союза раскритиковал киберфутбол")
 				.item
-					.wrap-news_card.theme-box
-						.news_card
-							.header_news_card
-								.title_date 07 Февраля 2018
-								.news-card-content Германия признает киберспорт официальным видом спорта
-							a(href="#").btn-news Читать подробнее
+					.wrap-news-card.theme-box
+						+news-card-item ("07 Февраля 2018", "Германия признает киберспорт официальным видом спорта")
 				.item
-					.wrap-news_card.theme-teenager
-						.news_card
-							.header_news_card
-								.title_date 06 Февраля 2018
-								.news-card-content 16-летний киберспортсмен выиграл первый крупный чемпионат по FIFA 18
-							a(href="#").btn-news Читать подробнее
-			.counter.mb
+					.wrap-news-card.theme-teenager
+						+news-card-item ("06 Февраля 2018", "16-летний киберспортсмен выиграл первый крупный чемпионат по FIFA 18")
+			.counter1.mb.counter

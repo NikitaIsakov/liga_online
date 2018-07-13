@@ -70,7 +70,7 @@ gulp.task('html:build', function() {
 gulp.task('js:build', function() {
   gulp.src(path.src.js) 
     .pipe(rigger()) 
-    .pipe(uglify()) 
+    //.pipe(uglify()) 
     .pipe(gulp.dest(path.build.js)) 
     .pipe(reload({ stream: true })); 
 });
